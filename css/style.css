@@ -1,0 +1,72 @@
+/*-- Samin Basir
+   File: style.css
+	 Samin_basir@student.uml.edu
+	 Computer Science Student UMass Lowell 91.461 GUI Programming I
+	 Date: 6/13/2022
+   Updated: 6/15/2022 by Samin Basir
+   created a table completely dynamically based on parameters entered
+in an HTML form
+*/
+body{
+    background-image: url("../images/background.gif");
+    background-size: 50%;
+    background-repeat:no-repeat;
+}
+
+/* if the table is too big you can scroll
+#multTable {
+    overflow: auto;
+    max-height: 600px;
+}
+*/
+/*  style of input form */
+.form {
+    margin: auto 0 auto 20px;
+}
+
+/* margin of input block */
+.form input {
+    margin: auto 10px auto 0;
+    width: 200px;
+}
+.wrapper {
+    background-color: lightblue;
+    border: 1px solid black;
+    list-style-type: none;
+    padding: 5px;
+    font-size: 90%;
+}
+table, th, td {
+    font-size: 16px;
+    font-weight: normal;
+    border: 1px solid black;
+    margin: auto;
+    background-color: white;
+}
+
+th, td {
+    width: 80px;
+    padding: 5px;
+    text-align: left;
+}
+
+th, td:nth-child(1) {
+    color: #ffbf00;
+    background-color: black;
+}
+/*setting the background color*/
+button{
+    background-color: red;
+    border: none;
+    color: #white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+/*using the hint given from the pdf*/
+tr:nth-child(odd) td:nth-child(2n + 3), tr:nth-child(even) td:nth-child(2n + 2) {
+    background-color: grey;
+}

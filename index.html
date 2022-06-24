@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Samin Basir
+   File: index.html
+	 Samin_basir@student.uml.edu
+	 Computer Science Student UMass Lowel GUI Programming I
+	 Date: 6/23/2022
+   Updated: 6/23/2022 by Samin Basir
+   created a table completely dynamically based on parameters entered
+in an HTML form
+
+tools used for help w3schools.com
+https://stackoverflow.com/questions/8749236/create-table-with-jquery-append
+-->
+
+<html lang="en">
+    <head>
+        <title>HW4</title>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Interactive Dynamic Table</h1>
+        <h3>Enter four numbers (range -50 to 50).</h3>
+
+        <div id="userInput">
+            <form id="inputForm">
+                <ul class="wrapper">
+                    <li>
+                        <label for="firstC" class="inputLabel">Enter the range of multiplicand from Minimum to Maxium:</label>
+                        <input type="number" id="firstC" name="firstC" ><br>
+                    </li>
+                    <li>
+                        <label for="lastC" class="inputLabel">Maximum Column Value</label>
+                        <input type="number" id="lastC" name="lastC"><br>
+                    </li>
+                    <li>
+                        <label for="firstR" class="inputLabel">Enter the range of multiplier from Minimum to Maximum:</label>
+                        <input type="number" id="firstR" name="firstR"><br>
+                    </li>
+                    <li>
+                        <label for="lastR" class="inputLabel">Maximum Row Value</label>
+                        <input type="number" id="lastR" name="lastR" ><br>
+                    </li>
+                    <li>
+                        <button id="submitBtn" type="submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+        <!-- The multiplication table will be built in this div -->
+        <div id="multTable"></div>
+
+
+        <!-- jQuery files -->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.2/jquery.validate.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.2/additional-methods.js"></script>
+
+        <!-- file to handle jQuery custom validation rules -->
+        <script src="js/hw.validate.js"></script>
+
+        <!-- file to generate mult table -->
+        <script src="js/tValidate.js"></script>
+    </body>
+</html>
